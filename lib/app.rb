@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class Battle < Sinatra::Base
 set :sessions, true
-run! if app_file == $0
+
 
   get '/' do
     erb(:index)
@@ -17,4 +17,6 @@ run! if app_file == $0
     @name2 = params[:name2]
     erb :play
   end
+
+  run! if app_file == $0
 end
