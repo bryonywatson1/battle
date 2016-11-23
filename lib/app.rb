@@ -21,6 +21,8 @@ class Battle < Sinatra::Base
   end
 
   get '/hit' do
+    @player1 = session[:player1]
+    @player2 = session[:player2]
     erb :hit
   end
 

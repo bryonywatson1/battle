@@ -1,9 +1,33 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <title>
+  </title>
 
-<%= @player1 %> vs <%= @player2 %> </br>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<form action='/hit' method='get'>
-<input type="submit" value="Hit">
-</form>
+</head>
 
-<%= @player2 %>: Hitpoints: 100
+<body>
+  <div class="main">
+    <div class="col-lg-6">
+      <h1> <%= @player1.capitalize %> </h1>
+    </div>
+    <h1> vs </h1>
+    <div class="col-lg-6">
+      <h1> <%= @player2.capitalize %> </h1>
+    </div>
+  </div>
+  <div class="hit_button">
+    <form action='/hit' method='get'>
+      <input class="button" type="submit" value="Hit">
+    </form>
+  </div>
+
+  <div class="main">
+    <h2> <%= @player2.capitalize %>: Hitpoints: 100 </h2>
+  </div>
+</body>
+
+</html>
