@@ -16,4 +16,6 @@ describe "Hitpoints" do
       expect(page).to have_content("Player 1's Hitpoints")
     end
   end
+
+  
 end
