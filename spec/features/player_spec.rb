@@ -3,9 +3,10 @@ require 'spec_helper'
 
 feature Player do
 
-    before(:each) do
-      sign_in_and_play
-    end
+
+  before(:each) do
+    sign_in_and_play
+  end
 
 
   subject(:anna) { Player.new('Anna') }
@@ -23,13 +24,12 @@ feature Player do
     end
   end
 
-describe '#receive_damage' do
-  it 'an attack reduces playes2\'s HP points by 10' do
-    click_button('Hit')
-    life.receive_damage
-    expect(life.hp_points).to eq 90
+  describe '#receive_damage' do
+    it 'an attack reduces playes2\'s HP points by 10' do
+      click_button('Hit')
+      expect{life.receive_damage}.to change{life.hp_points}.by(-10)
+    end
   end
-end
 
 
 end
