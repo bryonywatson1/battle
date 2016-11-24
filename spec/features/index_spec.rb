@@ -4,6 +4,7 @@ require 'player'
 
 feature Battle do
 
+
   let(:anna) { double :anna }
   let(:hp_points) { double :hp_points }
 
@@ -28,11 +29,6 @@ feature Battle do
       expect(page).to have_content('A attacked B')
     end
 
-    # it 'an attack reduces playes2\'s HP points by 10' do
-    #   allow(anna).to receive(:hp_points)  { 100 }
-    #   click_button('Hit')
-    #   anna.attack
-    #   expect(anna.hp_points).to eq 90
-    # end
+
   end
 end

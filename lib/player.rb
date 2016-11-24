@@ -13,8 +13,6 @@ HP_POINTS = 100
     @hp_points -= 10
   end
 
-  def attack(player)
-    player.receive_damage
-  end
+
 
 end
