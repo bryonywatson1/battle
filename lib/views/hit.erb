@@ -12,7 +12,8 @@
 <body>
 
   <div>
-    <h1> <%= @player1_name %> attacked <%= @player2_name %> !! </h1>
+    <h1> <%= @player1_name.name.capitalize %> attacked <%= @player2_name.name.capitalize %> !! </h1>
+    <h1> <%= @player2_name.name.capitalize %> : <%= @player2_name.hp_points %> </h1>
   </div>
 
 </div>
