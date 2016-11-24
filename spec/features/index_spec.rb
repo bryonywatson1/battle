@@ -17,13 +17,9 @@ feature Battle do
       expect(page).to have_content('Hitpoints: 100')
     end
 
-    it 'gets a confirmation that player2 has been attacked' do
-      expect(page).to have_content('Player 2 attacked')
-    end
-
     it 'returns the confirmation when Hit button gets clicked on' do
       click_button('Hit')
-      expect(page).to have_content('Player 2 attacked')
+      expect(page).to have_content('A attacked B')
     end
   end
 end
