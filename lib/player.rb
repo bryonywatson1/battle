@@ -10,8 +10,5 @@ class Player
     @hp = DEFAULT_HP
   end
 
-  def attacked
-    self.hp -= 10
-  end
 
 end
