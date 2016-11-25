@@ -1,3 +1,2 @@
 <meta http-equiv="refresh" content="4; URL='/play'" />
-<%= (session[:game]).attacked(session[:player_2]) %>
-<p> <%=(session[:player_2].name)%> has been attacked! Their HP has been reduced to <%= session[:player_2].hp %> </p>
+<p> <%=@game.player_2.name%> has been attacked! Their HP has been reduced to <%= @game.player_2.hp %> </p>
