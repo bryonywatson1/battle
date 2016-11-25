@@ -20,7 +20,7 @@ describe "Attack" do
     end
 
     it "should reduce the other players hitpoints by 10" do
-      expect(page).to have_content("Foo has been attacked! Their HP has been reduced to 50")
+      expect(page).to have_content("Bill has been attacked! Their HP has been reduced to 50")
     end
   end
 
